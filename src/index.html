@@ -1,48 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAISON</title>
-  <link rel="stylesheet" href="./output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAISON</title>
+    <link rel="stylesheet" href="./output.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="py-10.75 bg-[#FBF9F6]">
-    <div class="container mx-auto md:px-16">
-    <nav class="flex justify-between items-center">
-      <div class="navigation-links">
-        <ul class="hidden md:flex gap-16.25 text-[12px] font-semibold">
-          <li>
-            <a href="">Shop</a>
-          </li>
-          <li>
-            <a href="">Collections</a>
-        </li>
-          <li>
-            <a href="">About</a>
-        </li>
-      </ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="py-10.75 bg-[#FBF9F6]">
+      <div class="container mx-auto md:px-16">
+        <nav class="flex justify-between items-center">
+          <div class="navigation-links">
+            <ul class="hidden md:flex gap-16.25 text-[12px] font-semibold">
+              <li>
+                <a href="">Shop</a>
+              </li>
+              <li>
+                <a href="">Collections</a>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+            </ul>
+          </div>
+          <a
+            class="logo font-['Playfair_Display'] text-[32px]"
+            href="index.html"
+            >MAISON</a
+          >
+          <div class="icons">
+            <ul class="flex gap-6">
+              <li>
+                <a href="">
+                  <img src="./../assets/images/search.svg" alt="Search" />
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="./../assets/images/heart.svg" alt="Wishlist" />
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="./../assets/images/cart.svg" alt="Cart" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-<a class="logo font-['Playfair_Display'] text-[32px]" href="index.html">MAISON</a>
-      <div class="icons">
-        <ul class="flex gap-6">
+    </header>
+    <section class="hero relative h-auto pb-30">
+      <img
+        class="w-full h-full object-cover"
+        src="./../assets/images/hero.png"
+        alt="Maison hero"
+      />
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-center"
+      >
+        <h1
+          class="text-white text-[40px] md:text-[60px] lg:text-[84px] font-['Playfair_Display']"
+        >
+          The Art of Essentialism
+        </h1>
+
+        <a href="" class="bg-black px-8 md:px-16 lg:px-31.5 py-4 text-white">
+          Shop New Arrivals
+        </a>
+      </div>
+    </section>
+    <section class="sesonal-drop">
+      <div class="px-16">
+        <h6 class="text-[12px] font-semibold text-[#615E58]">SEASONAL DROP</h6>
+        <h2 class="font-['Playfair_Display'] text-[25px] md:text-[48px]">
+          Curated Essentials
+        </h2>
+        <div class="flex justify-end">
+          <a
+            href=""
+            class="text-[10px] font-semibold gap-2 tracking-[1px] flex items-center"
+          >
+            VIEW COLLECTION
+            <img src="./../assets/images/arrow.svg" alt="arrow" />
+          </a>
+        </div>
+      </div>
+      <div class="py-16">
+        <ul class="flex justify-between px-16 gap-8">
           <li>
-            <a href="">Search</a>
+            <img
+              src="./../assets/images/coat.png"
+              class="rounded-xl"
+              alt="Sculpted Wool Coat"
+            />
+            <h3 class="md:text-[18px] py-6 text-[14px]">Sculpted Wool Coat</h3>
+            <h4 class="md:text-[16px] text-[12px] text-[#C9A96A]">$1,250</h4>
           </li>
           <li>
-            <a href="">Heart</a>
+            <img
+              src="./../assets/images/bag.png"
+              class="rounded-xl"
+              alt="Maison Signature Tote"
+            />
+            <h3 class="md:text-[18px] py-6 text-[14px]">
+              Maison Signature Tote
+            </h3>
+            <h4 class="md:text-[16px] text-[12px] text-[#C9A96A]">$890</h4>
           </li>
           <li>
-            <a href="">Cart</a>
+            <img
+              src="./../assets/images/pants.png"
+              class="rounded-xl"
+              alt="Oyster Silk Trousers"
+            />
+            <h3 class="md:text-[18px] py-6 text-[14px]">
+              Oyster Silk Trousers
+            </h3>
+            <h4 class="md:text-[16px] text-[12px] text-[#C9A96A]">$540</h4>
           </li>
         </ul>
       </div>
-    </nav>
-    </div>
-  </header>
-</body>
+    </section>
+  </body>
 </html>
