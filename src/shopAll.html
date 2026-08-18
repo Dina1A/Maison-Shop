@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop All Collections</title>
+    <link rel="stylesheet" href="./output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#FBF9F6]">
+    <header class="py-6 md:py-10.75">
+      <div class="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+        <nav class="flex items-center justify-between">
+          <div class="flex items-center gap-4 md:gap-10 lg:gap-16.25">
+            <a
+              class="font-['Playfair_Display'] text-2xl sm:text-[28px] md:text-[32px]"
+              href="index.html"
+            >
+              MAISON
+            </a>
+
+            <ul
+              class="hidden md:flex gap-8 lg:gap-16.25 text-[12px] font-semibold"
+            >
+              <li><a href="">Shop</a></li>
+              <li><a href="">Collections</a></li>
+              <li><a href="">About</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="flex items-center gap-3 sm:gap-4 md:gap-6">
+              <li class="hidden md:block">
+                <input
+                  type="text"
+                  placeholder="Search collections..."
+                  class="w-40 lg:w-48 rounded-2xl border border-gray-300 px-3 py-2 text-sm outline-none focus:border-blue-500"
+                />
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="./../assets/images/heart.svg" alt="Wishlist" />
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="./../assets/images/cart.svg" alt="Cart" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="flex justify-center">
+      <aside>
+        <div>
+          <ul class="font-['Inter'] md:text-[16px] text-[12px] space-y-3">
+            <li>Apparel</li>
+            <li class="text-[#615E58]">
+              <a href="" class="">Accessories</a>
+            </li>
+            <li class="text-[#615E58]">
+              <a href="">Shoes</a>
+            </li>
+            <li class="text-[#615E58]">
+              <a href="">Beauty</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3
+            class="font-['Inter'] md:text-[12px] text-[10px] font-semibold md:py-10 py-8"
+          >
+            Price Range
+          </h3>
+          <input
+            id="priceRange"
+            type="range"
+            min="0"
+            max="1000"
+            value="50"
+            class="top-1/2 h-0.5 -translate-y-1/2 rounded-full accent-[#615E58]"
+          />
+        </div>
+
+        <div class="flex flex-col gap-2 md:py-10 py-8">
+          <h3
+            class="font-['Inter'] md:text-[12px] text-[10px] font-semibold py-5"
+          >
+            Colors
+          </h3>
+
+          <div class="flex gap-2">
+            <button class="h-6 w-6 rounded-full bg-[#141414]"></button>
+            <button class="h-6 w-6 rounded-full bg-[#FAF8F5]"></button>
+            <button class="h-6 w-6 rounded-full bg-[#E4E2DF]"></button>
+            <button class="h-6 w-6 rounded-full bg-[#B8A99A]"></button>
+            <button class="h-6 w-6 rounded-full bg-[#C9A96A]"></button>
+          </div>
+        </div>
+
+        <div>
+          <h3
+            class="font-['Inter'] md:text-[12px] text-[10px] font-semibold py-5"
+          >
+            Size
+          </h3>
+
+          <div class="grid grid-cols-3 gap-2">
+            <button class="h-8.5 w-18 border border-gray-300 px-2 py-2">
+              XS
+            </button>
+            <button class="h-8.5 w-18 border border-gray-300 px-2 py-2">
+              S
+            </button>
+            <button class="h-8.5 w-18 border border-gray-300 px-2 py-2">
+              M
+            </button>
+            <button class="h-8.5 w-18 border border-gray-300 px-2 py-2">
+              L
+            </button>
+            <button class="h-8.5 w-18 border border-gray-300 px-2 py-2">
+              XL
+            </button>
+          </div>
+
+          <div>
+            <h3
+              class="font-['Inter'] md:text-[12px] text-[10px] font-semibold py-5"
+            >
+              Brand
+            </h3>
+
+            <div>
+              <ul class="space-y-3 text-[16px]">
+                <li class="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    id="small"
+                    class="peer h-4 w-4 accent-black"
+                  />
+                  <label
+                    for="small"
+                    class="cursor-pointer text-[#615E58] peer-checked:text-black"
+                  >
+                    Maison Originals
+                  </label>
+                </li>
+
+                <li class="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    id="medium"
+                    class="peer h-4 w-4 accent-black"
+                  />
+                  <label
+                    for="medium"
+                    class="cursor-pointer text-[#615E58] peer-checked:text-black"
+                  >
+                    L'Atelier
+                  </label>
+                </li>
+
+                <li class="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    id="large"
+                    class="peer h-4 w-4 accent-black"
+                  />
+                  <label
+                    for="large"
+                    class="cursor-pointer text-[#615E58] peer-checked:text-black"
+                  >
+                    Studio Noir
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <section></section>
+    </div>
+    <footer></footer>
+  </body>
+</html>
