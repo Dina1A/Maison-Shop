@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="py-10.75 bg-[#FBF9F6]">
+      <div class="container mx-auto md:px-16">
+        <nav class="flex justify-between items-center">
+          <div class="navigation-links">
+            <ul class="hidden md:flex gap-16.25 text-[12px] font-semibold">
+              <li>
+                <a href="./index.html">Shop</a>
+              </li>
+              <li>
+                <a href="./shopAll.html">Collections</a>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+            </ul>
+          </div>
+          <a
+            class="logo font-['Playfair_Display'] text-[32px]"
+            href="index.html"
+            >MAISON</a
+          >
+          <div class="icons">
+            <ul class="flex gap-6">
+              <li>
+                <a href="">
+                  <img src="./../assets/images/search.svg" alt="Search" />
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="./../assets/images/heart.svg" alt="Wishlist" />
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="./../assets/images/cart.svg" alt="Cart" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="bg-[#FBF9F6] py-12 md:py-16">
+      <div class="mx-auto max-w-[1200px] px-6 md:px-16">
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_390px] lg:gap-16">
+          <div>
+            <section>
+              <div class="mb-5 flex items-center justify-between">
+                <h1
+                  class="font-['Playfair_Display'] text-[28px] md:text-[30px]"
+                >
+                  Shipping Address
+                </h1>
+
+                <span
+                  class="font-['Inter'] text-[7px] tracking-[1px] text-[#615E58]"
+                >
+                  Step 01
+                </span>
+              </div>
+
+              <div class="space-y-4">
+                <div>
+                  <label
+                    class="mb-2 block font-['Inter'] text-[8px] font-medium"
+                  >
+                    Full Name
+                  </label>
+
+                  <input
+                    type="text"
+                    value="Julienne Moore"
+                    class="h-10 w-full border-0 border-b border-[#D7D4CF] bg-[#F1F0ED] px-3 font-['Inter'] text-[10px] text-[#77736D] outline-none"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    class="mb-2 block font-['Inter'] text-[8px] font-medium"
+                  >
+                    Address
+                  </label>
+
+                  <input
+                    type="text"
+                    value="1242 Rue de Rivoli"
+                    class="h-10 w-full border-0 border-b border-[#D7D4CF] bg-[#F1F0ED] px-3 font-['Inter'] text-[10px] text-[#77736D] outline-none"
+                  />
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      class="mb-2 block font-['Inter'] text-[8px] font-medium"
+                    >
+                      City
+                    </label>
+
+                    <input
+                      type="text"
+                      value="Paris"
+                      class="h-10 w-full border-0 border-b border-[#D7D4CF] bg-[#F1F0ED] px-3 font-['Inter'] text-[10px] text-[#77736D] outline-none"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      class="mb-2 block font-['Inter'] text-[8px] font-medium"
+                    >
+                      Zip / Postal Code
+                    </label>
+
+                    <input
+                      type="text"
+                      value="75001"
+                      class="h-10 w-full border-0 border-b border-[#D7D4CF] bg-[#F1F0ED] px-3 font-['Inter'] text-[10px] text-[#77736D] outline-none"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    class="mb-2 block font-['Inter'] text-[8px] font-medium"
+                  >
+                    Phone Number
+                  </label>
+
+                  <input
+                    type="text"
+                    value="+33 1 23 45 67 89"
+                    class="h-10 w-full border-0 border-b border-[#D7D4CF] bg-[#F1F0ED] px-3 font-['Inter'] text-[10px] text-[#77736D] outline-none"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section class="mt-10 md:mt-12">
+              <div class="mb-5 flex items-center justify-between">
+                <h2
+                  class="font-['Playfair_Display'] text-[28px] md:text-[30px]"
+                >
+                  Shipping Method
+                </h2>
+
+                <span
+                  class="font-['Inter'] text-[7px] tracking-[1px] text-[#615E58]"
+                >
+                  Step 02
+                </span>
+              </div>
+
+              <div class="space-y-3">
+                <label
+                  class="flex cursor-pointer items-center justify-between border border-[#D7D4CF] px-3 py-4"
+                >
+                  <div class="flex items-center gap-3">
+                    <input
+                      type="radio"
+                      name="shipping"
+                      checked
+                      class="h-3 w-3 accent-black"
+                    />
+
+                    <div>
+                      <h3 class="font-['Inter'] text-[9px] font-semibold">
+                        Standard Shipping
+                      </h3>
+
+                      <p class="font-['Inter'] text-[7px] text-[#77736D]">
+                        3-5 business days
+                      </p>
+                    </div>
+                  </div>
+
+                  <span class="font-['Inter'] text-[8px]"> €0.00 </span>
+                </label>
+
+                <label
+                  class="flex cursor-pointer items-center justify-between border border-[#D7D4CF] px-3 py-4"
+                >
+                  <div class="flex items-center gap-3">
+                    <input
+                      type="radio"
+                      name="shipping"
+                      class="h-3 w-3 accent-black"
+                    />
+
+                    <div>
+                      <h3 class="font-['Inter'] text-[9px] font-semibold">
+                        Express Atelier
+                      </h3>
+
+                      <p class="font-['Inter'] text-[7px] text-[#77736D]">
+                        Next business day
+                      </p>
+                    </div>
+                  </div>
+
+                  <span class="font-['Inter'] text-[8px]"> €25.00 </span>
+                </label>
+              </div>
+            </section>
+
+            <section class="mt-10 md:mt-12">
+              <div class="mb-5 flex items-center justify-between">
+                <h2
+                  class="font-['Playfair_Display'] text-[28px] md:text-[30px]"
+                >
+                  Payment Details
+                </h2>
+
+                <span
+                  class="font-['Inter'] text-[7px] tracking-[1px] text-[#615E58]"
+                >
+                  Step 03
+                </span>
+              </div>
+
+              <div class="rounded-md bg-[#F1F0ED] p-4 md:p-5">
+                <div>
+                  <label
+                    class="mb-2 block font-['Inter'] text-[8px] font-medium"
+                  >
+                    Card Number
+                  </label>
+
+                  <div class="relative">
+                    <input
+                      type="text"
+                      placeholder="0000 0000 0000 0000"
+                      class="h-10 w-full border border-[#D7D4CF] bg-[#FBF9F6] px-3 font-['Inter'] text-[9px] text-[#77736D] outline-none"
+                    />
+
+                    <span
+                      class="absolute right-3 top-1/2 -translate-y-1/2 text-[12px] text-[#77736D]"
+                    >
+                      ▭
+                    </span>
+                  </div>
+                </div>
+
+                <div class="mt-4 grid grid-cols-2 gap-3">
+                  <div>
+                    <label
+                      class="mb-2 block font-['Inter'] text-[8px] font-medium"
+                    >
+                      Expiry Date
+                    </label>
+
+                    <input
+                      type="text"
+                      placeholder="MM / YY"
+                      class="h-10 w-full border border-[#D7D4CF] bg-[#FBF9F6] px-3 font-['Inter'] text-[9px] text-[#77736D] outline-none"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      class="mb-2 block font-['Inter'] text-[8px] font-medium"
+                    >
+                      CVV
+                    </label>
+
+                    <input
+                      type="text"
+                      placeholder="123"
+                      class="h-10 w-full border border-[#D7D4CF] bg-[#FBF9F6] px-3 font-['Inter'] text-[9px] text-[#77736D] outline-none"
+                    />
+                  </div>
+                </div>
+
+                <label class="mt-4 flex items-center gap-2">
+                  <input type="checkbox" class="h-3 w-3 accent-black" />
+
+                  <span class="font-['Inter'] text-[7px] text-[#77736D]">
+                    Save card details for future purchases
+                  </span>
+                </label>
+              </div>
+            </section>
+          </div>
+
+          <aside>
+            <div class="rounded-md bg-[#EFEEEB] p-5 md:p-6">
+              <h2 class="font-['Playfair_Display'] text-[23px]">
+                Order Summary
+              </h2>
+
+              <div class="mt-5 flex gap-3">
+                <div class="h-[70px] w-[60px] shrink-0 overflow-hidden">
+                  <img
+                    src="./../assets/images/silk.png"
+                    alt="Silk Drape Blouse"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+
+                <div class="flex flex-1 justify-between gap-3">
+                  <div>
+                    <h3 class="font-['Inter'] text-[9px] font-semibold">
+                      Silk Drape Blouse
+                    </h3>
+
+                    <p class="mt-1 font-['Inter'] text-[7px] text-[#77736D]">
+                      Ivory / Size M
+                    </p>
+                  </div>
+
+                  <span class="font-['Inter'] text-[8px]"> €420.00 </span>
+                </div>
+              </div>
+
+              <div class="mt-4 flex gap-3">
+                <div class="h-[70px] w-[60px] shrink-0 overflow-hidden">
+                  <img
+                    src="./../assets/images/woolt.png"
+                    alt="Tailored Wool Trouser"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+
+                <div class="flex flex-1 justify-between gap-3">
+                  <div>
+                    <h3 class="font-['Inter'] text-[9px] font-semibold">
+                      Tailored Wool Trouser
+                    </h3>
+
+                    <p class="mt-1 font-['Inter'] text-[7px] text-[#77736D]">
+                      Charcoal / Size 38
+                    </p>
+                  </div>
+
+                  <span class="font-['Inter'] text-[8px]"> €580.00 </span>
+                </div>
+              </div>
+
+              <div class="my-5 h-px bg-[#D9D6D0]"></div>
+
+              <div class="space-y-3">
+                <div class="flex justify-between">
+                  <span class="font-['Inter'] text-[8px] text-[#77736D]">
+                    Subtotal
+                  </span>
+
+                  <span class="font-['Inter'] text-[8px]"> €1,000.00 </span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span class="font-['Inter'] text-[8px] text-[#77736D]">
+                    Shipping
+                  </span>
+
+                  <span class="font-['Inter'] text-[8px]"> €0.00 </span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span class="font-['Inter'] text-[8px] text-[#77736D]">
+                    Duties & Taxes
+                  </span>
+
+                  <span class="font-['Inter'] text-[8px]"> €85.00 </span>
+                </div>
+              </div>
+
+              <button class="mt-5 font-['Inter'] text-[8px] text-[#615E58]">
+                +&nbsp; Add Promo Code
+              </button>
+
+              <div class="mt-5 border-t border-[#77736D] pt-4">
+                <div class="flex items-center justify-between">
+                  <span class="font-['Playfair_Display'] text-[20px]">
+                    Total
+                  </span>
+
+                  <span class="font-['Playfair_Display'] text-[18px]">
+                    €1,085.00
+                  </span>
+                </div>
+              </div>
+
+              <button
+                class="mt-5 h-11 w-full bg-[#171717] font-['Inter'] text-[8px] font-semibold tracking-[1px] text-white"
+              >
+                PLACE ORDER
+              </button>
+
+              <p
+                class="mt-4 text-center font-['Inter'] text-[5px] tracking-[0.5px] text-[#85817A]"
+              >
+                SECURE SSL ENCRYPTION • FREE RETURNS FOR 30 DAYS
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-[#EFEEEB] py-16 md:py-24">
+      <div
+        class="mx-6 md:mx-16 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16"
+      >
+        <div class="md:col-span-1">
+          <h2
+            class="font-['Playfair_Display'] text-[25px] md:text-[32px] leading-none"
+          >
+            MAISON
+          </h2>
+
+          <p
+            class="mt-5 max-w-md text-[#615E58] font-['Inter'] text-[12px] md:text-[14px] leading-6"
+          >
+            Join our inner circle for early access to new collections and
+            editorial stories.
+          </p>
+
+          <form class="mt-7 flex flex-col sm:flex-row gap-3">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="h-11 w-full border border-[#B8B6B0] bg-transparent px-3 font-['Inter'] text-[12px] md:text-[14px] text-[#6B7280] outline-none"
+            />
+
+            <button
+              type="submit"
+              class="h-11 whitespace-nowrap px-4 font-['Inter'] text-[11px] md:text-[12px] font-semibold tracking-wide"
+            >
+              SUBSCRIBE
+            </button>
+          </form>
+        </div>
+
+        <div>
+          <h3
+            class="font-['Inter'] text-[10px] md:text-[11px] font-semibold tracking-[0.15em]"
+          >
+            CUSTOMER CARE
+          </h3>
+
+          <ul
+            class="mt-5 space-y-3 font-['Inter'] text-[12px] md:text-[14px] text-[#615E58]"
+          >
+            <li>Shipping</li>
+            <li>Returns</li>
+            <li>Care Guide</li>
+            <li>Sustainability</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3
+            class="font-['Inter'] text-[10px] md:text-[11px] font-semibold tracking-[0.15em]"
+          >
+            COMPANY
+          </h3>
+
+          <ul
+            class="mt-5 space-y-3 font-['Inter'] text-[12px] md:text-[14px] text-[#615E58]"
+          >
+            <li>About Us</li>
+            <li>Newsletter</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

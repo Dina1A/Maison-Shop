@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-[#FBF9F6]">
+    <header class="py-6 md:py-10.75">
+      <div class="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+        <nav class="flex items-center justify-between">
+          <div class="flex items-center gap-4 md:gap-10 lg:gap-16.25">
+            <a
+              class="font-['Playfair_Display'] text-2xl sm:text-[28px] md:text-[32px]"
+              href="index.html"
+            >
+              MAISON
+            </a>
+
+            <ul
+              class="hidden md:flex gap-8 lg:gap-16.25 text-[12px] font-semibold"
+            >
+              <li>
+                <a href="./index.html">Shop</a>
+              </li>
+              <li>
+                <a href="./shopAll.html">Collections</a>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="flex items-center gap-3 sm:gap-4 md:gap-6">
+              <li>
+                <a href="">
+                  <img src="./../assets/images/heart.svg" alt="Wishlist" />
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="./../assets/images/cart.svg" alt="Cart" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="mx-5 md:mx-6 lg:mx-8 py-8 md:py-10">
+      <div class="mb-20 md:mb-28">
+        <h1
+          class="font-['Playfair_Display'] text-[34px] md:text-[48px]"
+        >
+          Your Shopping Bag
+        </h1>
+
+        <p class="font-['Inter'] mt-2 text-[14px] md:text-[16px] text-[#615E58]">
+          Review your selected items before proceeding to checkout.
+        </p>
+
+        <div
+          class="mt-10 flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between"
+        >
+          <div class="w-full lg:w-[62%]">
+            <div
+              class="flex gap-5 border-b border-[#E5E3DF] pb-6 md:gap-6"
+            >
+              <img
+                src="./../assets/images/oversized.png"
+                alt="Oversized Cashmere Coat"
+                class="h-[120px] w-[90px] object-cover md:h-[150px] md:w-[110px]"
+              />
+
+              <div class="flex flex-1 flex-col justify-between">
+                <div class="flex justify-between gap-4">
+                  <div>
+                    <h2
+                      class="font-['Playfair_Display'] text-[18px] md:text-[22px]"
+                    >
+                      Oversized Cashmere Coat
+                    </h2>
+
+                    <p class="font-['Inter'] mt-3 text-[12px] text-[#615E58]">
+                      Color: Oat Milk
+                    </p>
+
+                    <p class="font-['Inter'] mt-1 text-[12px] text-[#615E58]">
+                      Size: Medium
+                    </p>
+                  </div>
+
+                  <p class="font-['Inter'] text-[14px] font-medium text-[#C9A96A]">
+                    $1,250.00
+                  </p>
+                </div>
+
+                <div class="mt-5 flex items-center justify-between">
+                  <div
+                    class="flex h-[32px] items-center rounded-full border border-[#999] px-2"
+                  >
+                    <button class="px-3 text-[14px]">−</button>
+                    <span class="px-3 text-[12px]">1</span>
+                    <button class="px-3 text-[14px]">+</button>
+                  </div>
+
+                  <button
+                    class="font-['Inter'] text-[10px] tracking-[1px] text-[#666] hover:text-black"
+                  >
+                    × REMOVE
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-5 border-b border-[#E5E3DF] py-6 md:gap-6"
+            >
+              <img
+                src="./../assets/images/boots.png"
+                alt="Sculptural Leather Boot"
+                class="h-[120px] w-[90px] object-cover md:h-[150px] md:w-[110px]"
+              />
+
+              <div class="flex flex-1 flex-col justify-between">
+                <div class="flex justify-between gap-4">
+                  <div>
+                    <h2
+                      class="font-['Playfair_Display'] text-[18px] md:text-[22px]"
+                    >
+                      Sculptural Leather Boot
+                    </h2>
+
+                    <p class="font-['Inter'] mt-3 text-[12px] text-[#615E58]">
+                      Color: Espresso
+                    </p>
+
+                    <p class="font-['Inter'] mt-1 text-[12px] text-[#615E58]">
+                      Size: 39
+                    </p>
+                  </div>
+
+                  <p class="font-['Inter'] text-[14px] font-medium text-[#C9A96A]">
+                    $680.00
+                  </p>
+                </div>
+
+                <div class="mt-5 flex items-center justify-between">
+                  <div
+                    class="flex h-[32px] items-center rounded-full border border-[#999] px-2"
+                  >
+                    <button class="px-3 text-[14px]">−</button>
+                    <span class="px-3 text-[12px]">1</span>
+                    <button class="px-3 text-[14px]">+</button>
+                  </div>
+
+                  <button
+                    class="font-['Inter'] text-[10px] tracking-[1px] text-[#666] hover:text-black"
+                  >
+                    × REMOVE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-[32%]">
+            <div class="bg-[#EFEEEB] p-6 md:p-7">
+              <h2
+                class="font-['Playfair_Display'] text-[22px] md:text-[24px]"
+              >
+                Summary
+              </h2>
+
+              <div class="mt-6 space-y-4">
+                <div class="flex justify-between">
+                  <span class="font-['Inter'] text-[12px] text-[#615E58]">
+                    Subtotal
+                  </span>
+                  <span class="font-['Inter'] text-[12px]">$1,930.00</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span class="font-['Inter'] text-[12px] text-[#615E58]">
+                    Shipping
+                  </span>
+                  <span class="font-['Inter'] text-[11px] font-semibold">
+                    Calculated at next step
+                  </span>
+                </div>
+              </div>
+
+              <div class="my-5 border-t border-[#D8D6D1] pt-5">
+                <div class="flex items-center justify-between">
+                  <span class="font-['Inter'] text-[13px] font-semibold">
+                    Total
+                  </span>
+                  <span class="font-['Inter'] text-[16px] text-[#C9A96A]">
+                    $1,930.00
+                  </span>
+                </div>
+              </div>
+
+              <a
+                href=""
+                class="mt-5 flex w-full items-center justify-center rounded-full bg-black py-3.5 text-[10px] font-semibold tracking-[1px] text-white"
+              >
+                PROCEED TO CHECKOUT
+              </a>
+
+              <div class="mt-6 space-y-4">
+                <div class="flex items-center gap-2">
+                  <span class="text-[12px]">♧</span>
+                  <p class="font-['Inter'] text-[10px] text-[#615E58]">
+                    Complimentary carbon-neutral delivery
+                  </p>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <span class="text-[12px]">♙</span>
+                  <p class="font-['Inter'] text-[10px] text-[#615E58]">
+                    Secure checkout & encryption
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p class="font-['Inter'] mt-4 text-[9px] leading-4 text-[#777]">
+              By clicking “Proceed to Checkout”, you agree to our
+              Terms of Service and Privacy Policy. All prices include
+              applicable taxes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2
+          class="text-center font-['Playfair_Display'] text-[28px] md:text-[40px]"
+        >
+          You May Also Like
+        </h2>
+
+        <ul
+          class="mt-8 grid grid-cols-2 gap-5 md:grid-cols-4 md:gap-6"
+        >
+          <li>
+            <img
+              src="./../assets/images/bracelet.png"
+              class="h-auto w-full rounded-xl object-cover"
+              alt="Aurelia Link Bracelet"
+            />
+
+            <h3
+              class="mt-6 font-['Playfair_Display'] text-[14px] md:text-[18px]"
+            >
+              Aurelia Link Bracelet
+            </h3>
+
+            <h4
+              class="font-['Inter'] text-[12px] text-[#C9A96A] md:text-[16px]"
+            >
+              $420.00
+            </h4>
+          </li>
+
+          <li>
+            <img
+              src="./../assets/images/handbag.png"
+              class="h-auto w-full rounded-xl object-cover"
+              alt="Studio Top Handle Bag"
+            />
+
+            <h3
+              class="mt-6 font-['Playfair_Display'] text-[14px] md:text-[18px]"
+            >
+              Studio Top Handle Bag
+            </h3>
+
+            <h4
+              class="font-['Inter'] text-[12px] text-[#C9A96A] md:text-[16px]"
+            >
+              $850.00
+            </h4>
+          </li>
+
+          <li>
+            <img
+              src="./../assets/images/candle.png"
+              class="h-auto w-full rounded-xl object-cover"
+              alt="Cedar & Santal Candle"
+            />
+
+            <h3
+              class="mt-6 font-['Playfair_Display'] text-[14px] md:text-[18px]"
+            >
+              Cedar & Santal Candle
+            </h3>
+
+            <h4
+              class="font-['Inter'] text-[12px] text-[#C9A96A] md:text-[16px]"
+            >
+              $75.00
+            </h4>
+          </li>
+
+          <li>
+            <img
+              src="./../assets/images/scarf.png"
+              class="h-auto w-full rounded-xl object-cover"
+              alt="Abstract Silk Scarf"
+            />
+
+            <h3
+              class="mt-6 font-['Playfair_Display'] text-[14px] md:text-[18px]"
+            >
+              Abstract Silk Scarf
+            </h3>
+
+            <h4
+              class="font-['Inter'] text-[12px] text-[#C9A96A] md:text-[16px]"
+            >
+              $210.00
+            </h4>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="bg-[#EFEEEB] pt-16 md:pt-20">
+      <div
+        class="mx-6 md:mx-10 lg:mx-16 flex flex-col md:flex-row gap-10 md:gap-0 pb-16 md:pb-20"
+      >
+        <div class="flex-1">
+          <h2 class="font-['Playfair_Display'] text-[25px] md:text-[22px]">
+            MAISON
+          </h2>
+
+          <p
+            class="text-[#615E58] font-['Inter'] text-[12px] md:text-[11px] leading-relaxed max-w-[180px] mt-4"
+          >
+            Elevating everyday life through quiet luxury and sustainable
+            craftsmanship.
+          </p>
+
+          <div class="flex gap-3 mt-5 text-[14px]">
+            <span>◉</span>
+            <span>@</span>
+          </div>
+        </div>
+
+        <div class="flex-1">
+          <h3
+            class="font-['Inter'] text-[9px] md:text-[8px] font-semibold mb-4"
+          >
+            Client Care
+          </h3>
+
+          <ul
+            class="font-['Inter'] text-[11px] md:text-[10px] text-[#615E58] space-y-3"
+          >
+            <li>Shipping</li>
+            <li>Returns</li>
+            <li>Sustainability</li>
+          </ul>
+        </div>
+
+        <div class="flex-1">
+          <h3
+            class="font-['Inter'] text-[9px] md:text-[8px] font-semibold mb-4"
+          >
+            Legal
+          </h3>
+
+          <ul
+            class="font-['Inter'] text-[11px] md:text-[10px] text-[#615E58] space-y-3"
+          >
+            <li>Privacy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </div>
+
+        <div class="flex-1">
+          <h3
+            class="font-['Inter'] text-[9px] md:text-[8px] font-semibold mb-4"
+          >
+            Newsletter
+          </h3>
+
+          <p
+            class="font-['Inter'] text-[11px] md:text-[10px] text-[#615E58] leading-relaxed max-w-[180px] mb-5"
+          >
+            Join our list for exclusive releases and editorial updates.
+          </p>
+
+          <form class="flex border-b border-[#8A8883] max-w-[165px]">
+            <input
+              type="email"
+              placeholder="Email address"
+              class="bg-transparent outline-none border-none w-full py-1 font-['Inter'] text-[10px] text-[#615E58] placeholder:text-[#8A8883]"
+            />
+
+            <button
+              type="submit"
+              class="font-['Inter'] text-[10px] font-medium py-1"
+            >
+              JOIN
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-[#E1DFDC] px-6 md:px-10 lg:px-16 py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
+      >
+        <p
+          class="font-['Inter'] text-[9px] md:text-[8px] text-[#615E58]"
+        >
+          © 2024 MAISON. All Rights Reserved.
+        </p>
+
+        <div
+          class="flex gap-6 font-['Inter'] text-[7px] text-[#8A8883] tracking-wider"
+        >
+          <span>VISA</span>
+          <span>MASTERCARD</span>
+          <span>APPLE PAY</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
